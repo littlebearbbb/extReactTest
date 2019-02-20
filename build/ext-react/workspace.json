@@ -1,0 +1,9 @@
+{
+    "frameworks": {
+        "ext": "..\\..\\node_modules\\@sencha\\ext"
+    },
+    "packages": {
+        "dir": "${workspace.dir}/packages/local,${workspace.dir}/packages,D:\\workspace\\test-app\\node_modules\\@sencha,ext-react\\packages",
+        "extract": "${workspace.dir}/packages/remote"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "framework": "ext",
+    "toolkit": "modern",
+    "requires": [
+        "ext",
+        "core",
+        "font-awesome",
+        "font-ext",
+        "modern",
+        "treegrid",
+        "renderercell",
+        "transition"
+    ],
+    "overrides": [
+        "jsdom-environment.js"
+    ],
+    "packages": {
+        "dir": [
+            "D:\\workspace\\test-app\\node_modules\\@sencha",
+            "D:\\workspace\\test-app\\ext-react\\packages"
+        ]
+    },
+    "output": {
+        "base": ".",
+        "resources": {
+            "path": "./resources",
+            "shared": "./resources"
+        }
+    },
+    "theme": "forest"
+}

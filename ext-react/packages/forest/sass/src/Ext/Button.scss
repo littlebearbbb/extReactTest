@@ -1,0 +1,8 @@
+@include button-ui(
+    $ui: 'toolbar-btn',
+    $background-color:$main-theme,
+    $pressed-background-color: #fff,
+    $pressed-color: $main-theme,
+    $color: #fff,
+
+);
