@@ -1,2 +1,2 @@
 // @tag App
-// @require D:\workspace\test-app\build\ext-react\app.js
+// @require D:\workspace\extReactTest\build\ext-react\app.js

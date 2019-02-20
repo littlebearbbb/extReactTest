@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
-import { Container, TitleBar, Button, Sheet, Panel, Toolbar, SegmentedButton } from '@sencha/ext-modern';
+import { Container, TitleBar, Button, Sheet, Panel, Toolbar, SegmentedButton, Image, Spacer } from '@sencha/ext-modern';
 import { Transition} from '@sencha/ext-react-transition';
 
 import { Switch, Route, withRouter } from 'react-router-dom'
 import { medium, large } from './responsiveFormulas';
-import Home from './Home/Home';
-import About from './About/About';
-import NavMenu from './NavMenu';
+// import Home from './Home/Home';
+// import About from './About/About';
+// import NavMenu from './NavMenu';
+import styles from './Layout.cm.scss';
 var REACT_VERSION = require('react').version
 
 /**
@@ -43,15 +44,24 @@ class Layout extends Component {
         }
 
         return (
-            <Container fullscreen layout="fit">
+            <Container scrollable="x">
+                <Panel minWidth={1200}>
                 <TitleBar title={this.title} docked="top">
-                    <Toolbar docked="right">
-                        <SegmentedButton className="theme-bg">
-                            <Button ui="toolbar-btn">button1</Button>
-                            <Button ui="toolbar-btn">button2</Button>
+                    <Toolbar align="right" className="theme-bg" shadow={false}>
+                        <SegmentedButton>
+                            <Button ui="toolbar-btn" margin="0 2px">任务列表</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">台账管理</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">问题列表</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">统计分析</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">检查报告</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">综合考评</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">用户管理</Button>
+                            <Button ui="toolbar-btn" margin="0 2px">通知公告</Button>
                         </SegmentedButton>
                     </Toolbar>
+                    <Image align="right" width="36px" height="36px" className={styles.avatar}></Image>
                 </TitleBar>
+                </Panel>
             </Container>
             // <Container fullscreen layout="fit">
             //     <TitleBar title={this.title} docked="top">

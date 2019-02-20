@@ -62,11 +62,15 @@ module.exports = function (env) {
             ]
           },
           {
-            test: /\.scss$/,
-            use: [
-              'css-loader',
-              'sass-loader',
-            ]
+            test: /((?!\.cm).)+\.scss$/,
+            // common sass
+            include: path.join(__dirname, 'src/styles'),
+            loader: 'style-loader!css-loader?sourceMap!postcss-loader?sourceMap!sass-loader',
+          },
+          {
+            test: /\.cm\.scss$/,
+            // module sass
+            loader: 'style-loader!css-loader?modules&camelCase&localIdentName=[local]-[hash:base64:5]!postcss-loader?sourceMap!sass-loader?modules',
           }
         ]
       },
@@ -74,8 +78,13 @@ module.exports = function (env) {
         // The following is only needed when running this boilerplate within the ext-react repo.  You can remove this from your own projects.
         alias: {
           "react-dom": path.resolve('./node_modules/react-dom'),
-          "react": path.resolve('./node_modules/react')
-        }
+          "react": path.resolve('./node_modules/react'),
+          "@src": path.resolve(__dirname, './src'),
+          "@containers": path.resolve(__dirname, './src/containers'),
+          "@components": path.resolve(__dirname, './src/components'),
+          "@styles": path.resolve(__dirname, './src/styles'),
+        },
+        extensions: ['.wasm', '.mjs', '.js', '.json', '.scss'],
       },
       plugins,
       devServer: {

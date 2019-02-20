@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { launch } from '@sencha/ext-react'
-import App from './App'
-import './sass/common.scss'
+import App from '@containers/App'
+import '@styles/common'
 
 let viewport;
 
@@ -22,7 +22,7 @@ const render = (Component, target) => {
 launch(target => render(App, viewport = target));
 
 if (module.hot) {
-  module.hot.accept('./App', () => render(App, viewport));
+  module.hot.accept('@containers/App', () => render(App, viewport));
 }
 
 //go({element:App, callback: render});
