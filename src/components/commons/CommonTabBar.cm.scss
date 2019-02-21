@@ -1,0 +1,22 @@
+@import '@styles/variable';
+.panel-container {
+    padding-left: 45px;
+    height: 46px;
+    background-color: $grey-thin;
+    box-shadow:0px 2px 9px 0px rgba(0,0,0,0.29);
+    .tab {
+        float: left;
+        margin-right: 24px;
+        height: 46px;
+        line-height: 46px;
+        color: $dark;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: $grey-thin;
+        cursor: pointer;
+        &:hover, &.active {
+            color: $main-theme;
+            border-bottom: 1px solid $main-theme;
+        }
+    }
+}

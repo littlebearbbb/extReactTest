@@ -29,7 +29,10 @@
     "@sencha/ext-react": "~6.6.3",
     "@sencha/ext-react-renderercell": "~6.6.3",
     "@sencha/ext-react-transition": "~6.6.3",
-    "prop-types": "^15.6.2",
+    "classnames": "^2.2.6",
+    "deepequal": "0.0.1",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.7.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1"
