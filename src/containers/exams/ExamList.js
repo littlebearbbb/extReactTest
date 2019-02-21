@@ -35,7 +35,7 @@ class ExamList extends Component {
                     <FieldSet layout="hbox">
                         <TextField placeholder="请输入" labelAlign="top" label="考核编号" className={styles.field} ></TextField>
                         <TextField placeholder="请输入" labelAlign="top" label="考核名称" className={styles.field} ></TextField>
-                        <DatePickerField placeholder="请输入" labelAlign="top" label="创建时间" className={styles.field} language="cn"></DatePickerField>
+                        <DatePickerField placeholder="请输入" labelAlign="top" label="创建时间" className={styles.field} dateFormat="Y-m-d" editable={false}></DatePickerField>
                     </FieldSet>
                 </FormPanel>
             </Container>

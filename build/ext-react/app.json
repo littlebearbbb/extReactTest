@@ -16,8 +16,8 @@
     ],
     "packages": {
         "dir": [
-            "C:\\workspace\\extReactTest\\node_modules\\@sencha",
-            "C:\\workspace\\extReactTest\\ext-react\\packages"
+            "D:\\workspace\\extReactTest\\node_modules\\@sencha",
+            "D:\\workspace\\extReactTest\\ext-react\\packages"
         ]
     },
     "output": {
