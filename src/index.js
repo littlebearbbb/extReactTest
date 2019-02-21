@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import { launch } from '@sencha/ext-react'
 import App from '@containers/App'
+require('./i18n.js');
 import '@styles/common'
 
 let viewport;

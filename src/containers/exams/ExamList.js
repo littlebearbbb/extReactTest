@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import { Container, Pannel } from '@sencha/ext-modern';
+import { Container, FormPanel, FieldSet, TextField, DatePickerField } from '@sencha/ext-modern';
 import CommonTabBar from '@components/commons/CommonTabBar';
 import { ENGINE_METHOD_ALL } from 'constants';
+import styles from './ExamList.cm.scss';
 const tabTypes = {
     ALL: 1,
     NOPUBLISH: 2,
     PUBLISHED: 3,
 }
 
-class ExamList extends Component {
+class ExamList extends Component { 
     constructor(props) {
         super(props);
         this.tabs = [{
@@ -30,6 +31,13 @@ class ExamList extends Component {
         return (
             <Container>
                 <CommonTabBar tabs={this.tabs} onTabChange={this.onTabChange} />
+                <FormPanel layout={{ type: 'vbox', pack: 'center' }} ui="common-form-panel" shadow className={styles.inputContainer} >
+                    <FieldSet layout="hbox">
+                        <TextField placeholder="请输入" labelAlign="top" label="考核编号" className={styles.field} ></TextField>
+                        <TextField placeholder="请输入" labelAlign="top" label="考核名称" className={styles.field} ></TextField>
+                        <DatePickerField placeholder="请输入" labelAlign="top" label="创建时间" className={styles.field} language="cn"></DatePickerField>
+                    </FieldSet>
+                </FormPanel>
             </Container>
         )
     }

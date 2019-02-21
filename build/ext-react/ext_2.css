@@ -4834,3 +4834,15 @@ body {
 .x-keyboard-mode .x-button-toolbar-btn.x-focused.x-hovered .x-inner-el {
     background-image: none;
 }
+/* C:/workspace/extReactTest/node_modules/@sencha/ext-modern-theme-neptune/sass/var/Panel.scss:907 */
+.x-panel-common-form-panel > .x-anchor-el .x-pointer-el {
+    fill: #fff;
+}
+/* C:/workspace/extReactTest/node_modules/@sencha/ext-modern-theme-neptune/sass/var/Panel.scss:951 */
+.x-panel-common-form-panel-body-el {
+    background-color: #fff;
+}
+/* C:/workspace/extReactTest/node_modules/@sencha/ext-modern-theme-neptune/sass/var/Panel.scss:972 */
+.x-panel-common-form-panel-boxscroller > .x-boxscroller-body > .x-body-el {
+    border: 0;
+}
